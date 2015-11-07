@@ -1,280 +1,305 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Boris Lin</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Header -->
-			<div id="header">
+<head>
 
-				<div class="top">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Boris Lin</h1>
-							<p>Software Engineer</p>
-						</div>
+    <title>Stylish Portfolio - Start Bootstrap Theme</title>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-								Prologue's nav expects links in one of two formats:
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-								1. Hash link (scrolls to a different section within the page)
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-								2. Standard link (sends the user to another page/site)
+</head>
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+<body>
 
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#projects" id="projects-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Projects</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav>
 
-				</div>
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Start Bootstrap</h1>
+            <h3>Free Bootstrap Themes &amp; Templates</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
 
-				<div class="bottom">
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://github.com/borislin" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://ca.linkedin.com/in/boruilin224" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://www.facebook.com/borui.lin.1" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://twitter.com/BoruiLin224" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<!--<li><a href="" target="_blank" class="icon fa-wechat"><span class="label">WeChat</span></a></li>-->
-							<!--<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>-->
-							<li><a href="mailto:boruilin224@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Our Services</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-				</div>
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>Vertically Centered Text</h1>
+        </div>
+    </aside>
 
-			</div>
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Our Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <a href="#" class="btn btn-dark">View More Items</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-		<!-- Main -->
-			<div id="main">
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>The buttons below are impossible to resist.</h3>
+                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                </div>
+            </div>
+        </div>
+    </aside>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+    <!-- Map -->
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </section>
 
-							<header>
-								<h2 class="alt">I'm <strong>Boris Lin</strong>, a full-stack software <br />
-								engineer from University of Waterloo.</h2>
-								<p>detail-oriented & product-driven</p>
-							</header>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Start Bootstrap</strong>
+                    </h4>
+                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-							<footer>
-								<a href="#about" class="button scrolly">About Me</a>
-							</footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-						</div>
-					</section>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
 
-							<a href='#' class="image featured"><img src="images/pic08.jpg" alt: ""></a>
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-							<p>I am an undergraduate Computer Science student at the University of Waterloo, currently in 3A. I grew up in China and completed my high school education in Singapore on a scholarship. With a huge passion in technology, I have gained <span class="stronger">11 years</span> of experience in <span class="stronger">competitive programming</span> and <span class="stronger">2 years</span> in <span class="stronger">web development</span>. Apart from tech, I enjoy listening to hip-pop music, playing the piano, taking great photos, and of course, reading Hacker News.</p>
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 
-						</div>
-					</section>
+</body>
 
-				<!-- Projects -->
-					<section id="projects" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Projects</h2>
-							</header>
-
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
-
-							<div class="row">
-								<article>
-									<ul>
-										<li class="col-md-6 right"><a href='http://bookeeper-boris.herokuapp.com' class="image fit" id: "bookeeper"><img src="images/Coming-Soon.png" alt: ""></a></li>
-										<li class="col-md-6 left text">
-											<h4><span class="stronger"><a href="https://sampleapp-boris.herokuapp.com"></a></span>BOOKeeper | <strong>RAILS & BOOTSTRAP</strong></h4>
-											<p>An open source bookkeeping web app designed for simplicity and ease to use, and built on Ruby on Rails / CSS3 / HTML5 / PostgreSQL</p>
-										</li>
-									</ul>
-								</article>
-							</div>
-
-							<div class="row">
-								<article>
-									<ul>
-										<li class="col-md-6 left"><a href='http://www.borislin.me' class="image fit"><img src="images/pic02.jpg" alt: ""></a></li>
-										<li class="col-md-6 right text">
-											<h4><span class="stronger"><a href="http://www.borislin.me">PERSONAL WEBSITE</a></span> | <strong>RAILS & CSS3</strong></h4>
-											<p>This is my personal website built on Ruby on Rails / CSS3 (Twitter Bootstrap) / HTML5. It is hosted on Heroku and maintained via Git / GitHub / Namecheap.</p>
-										</li>
-									</ul>
-								</article>
-							</div>
-
-							<div class="row">
-								<article>
-									<ul>
-										<li class="col-md-6 right"><a href='https://sampleapp-boris.herokuapp.com' class="image fit" id: "sampleapp"><img src="images/sampleapp.png" alt: ""></a></li>
-										<li class="col-md-6 left text">
-											<h4><span class="stronger"><a href="https://sampleapp-boris.herokuapp.com">TWITTER-STYLE SOCIAL WEB APP</a></span> | <strong>RAILS & BOOTSTRAP</strong></h4>
-											<p>An open source Twitter-style social networking web app built on Ruby on Rails / CSS3 (Twitter Bootstrap) / HTML5 / PostgreSQL</p>
-										</li>
-									</ul>
-								</article>
-							</div>
-
-							<div class="row">
-								<article>
-									<ul>
-										<li class="col-md-6 left"><img scr="images/wlp4.png" alt: "" class: "image fit" id: "wlp4"></li>
-										<li class="col-md-6 right text" id="wlp4">
-											<h4><span class="stronger">WLP4 PROGRAMMING LANGUAGE COMPILER</span> | <strong>C++</strong></h4>
-											<p>Designed and implemented a full WLP4 (a subset of C++) compiler (scanner + parser + error-checker + MIPS-code-generator) in C++, translating WLP4 into MIPS assembly language</p>
-										</li>
-									</ul>
-								</article>
-							</div>
-
-							<div class="row">
-								<article>
-									<ul>
-										<li class="col-md-6 right"><img scr="images/quadris.png" alt: "" class: "image fit" id: "quadris"></li>
-										<li class="col-md-6 left text">
-											<h4><span class="stronger">QUADRIS</span> | <strong>C++ & X11 GRAPHICS</strong></h4>
-											<p>Built up experience and skill set by designing and deploying a full desktop Tetris-like game called “Quadris” in both plain text and GUI with applying C++ technology and advanced software development skills</p>
-										</li>
-									</ul>
-								</article>
-							</div>
-
-
-							<!--<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<%= link_to image_tag("pic02.jpg", alt: "", class: "image fit"), '#' %>
-
-										<header>
-											<h3>PERSONAL WEBSITE</h3>
-										</header>
-									</article>
-									<article class="item">
-										<%= link_to image_tag("pic03.jpg", alt: "", class: "image fit"), '#' %>
-										<header>
-											<h3>TWITTER-STYLE SOCIAL WEB APP</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<%= link_to image_tag("pic04.jpg", alt: "", class: "image fit"), '#' %>
-										<header>
-											<h3>WLP4 PROGRAMMING LANGUAGE COMPILER</h3>
-										</header>
-									</article>
-									<article class="item">
-										<%= link_to image_tag("pic05.jpg", alt: "", class: "image fit"), '#' %>
-										<header>
-											<h3>QUADRIS</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-									<article class="item">
-										<%= link_to image_tag("pic06.jpg", alt: "", class: "image fit"), '#' %>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<%= link_to image_tag("pic07.jpg", alt: "", class: "image fit"), '#' %>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>-->
-
-						</div>
-					</section>
-
-
-					<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="12u$">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; 2015 Boris Lin. All rights reserved.</li>
-						<li>Inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
-						<li>Special thanks to: <a href="http://5am.works">Sam Wang</a> & <a href="http://www.sxu.ca">Steven Xu</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
